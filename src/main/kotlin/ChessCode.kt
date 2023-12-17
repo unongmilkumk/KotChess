@@ -4,7 +4,9 @@ class KingSideCastling : ChessCode
 
 class QueenSideCastling : ChessCode
 
-class Pawn(goingTo : Location, isEating : Boolean, moveCode : String, isPromotion : Boolean) : ChessCode
+class Pawn(goingTo : Location, isEating : Boolean, moveCode : String) : ChessCode
+
+class PromotionPawn(goingTo : String, isEating : Boolean, moveCode : String, pieceType: PieceType) : ChessCode
 
 class Bishop(goingTo: Location, isEating: Boolean, moveCode : String) : ChessCode
 
